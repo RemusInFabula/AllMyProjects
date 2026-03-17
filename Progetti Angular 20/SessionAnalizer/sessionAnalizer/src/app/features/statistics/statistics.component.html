@@ -1,0 +1,9 @@
+<div>
+  <p>Total focus time: {{ totalFocusTime() }}</p>
+@for(session of sessions(); track session.id){
+<div>
+    <p>{{ session.type }} : {{ session.elapsed }}/{{ session.duration }}</p>
+</div>
+}
+  
+</div>

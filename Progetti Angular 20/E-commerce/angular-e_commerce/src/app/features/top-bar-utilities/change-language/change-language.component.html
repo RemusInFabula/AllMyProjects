@@ -1,0 +1,16 @@
+@switch(currentLanguage){
+  @case('en'){
+    <span class="inline-block fi fi-us" style="margin-bottom: 5px;"></span>
+  }
+  @case('it'){
+    <span class="inline-block fi fi-it" style="margin-bottom: 5px;"></span>
+  }
+  @case ('de') {
+    <span class="inline-block fi fi-de" style="margin-bottom: 5px;"></span>
+  }
+}
+<select id="inline-block language-select" (change)="changeLanguage($event)" [value]="currentLanguage">
+    <option value="en">EN</option>
+    <option value="it">IT</option>
+    <option value="de">DE</option>
+</select>

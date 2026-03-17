@@ -1,0 +1,66 @@
+{
+  "menu": {
+    "title": "User Menu",
+    "userName": "User name :",
+    "Roles": "Roles :"
+  },
+  "productSearchPlaceholder": "Find product...",
+  "itemQuantity": "Quantity x ",
+  "partial": "Subtotal: ",
+  "cartClear": "Clear cart",
+  "total": {
+    "value": "Total:",
+    "shippingCost": "including ${{actualShippingCost}} shipping."
+  },
+  "goToCheckout": "Go to checkout.",
+  "cart": {
+    "remove": "Product removed",
+    "add": "Product added",
+    "empty": "Cart cleared"
+  },
+
+  "step1Title": "Customer Details",
+  "step1SubTitle": "Enter your details to proceed with the order.",
+  "step1Name": "First Name",
+  "step1NamePlaceholder": "Enter your first name",
+  "step1InvalidName": "First name is required and must be at least 3 characters long.",
+  "step1Surname": "Last Name",
+  "step1SurnamePlaceholder": "Enter your last name",
+  "step1InvalidSurname": "Last name is required and must be at least 3 characters long.",
+  "step1Email": "Email",
+  "step1EmailPlaceholder": "Enter your email",
+  "step1InvalidEmail": "Email is required and must be valid.",
+  "step1Address": "Address",
+  "step1AddressPlaceholder": "E.g. Viale Europa 30 00100 RM",
+  "step1InvalidAddress": "Address is required and must be at least 5 characters long.",
+  "step1Next": "Continue",
+
+  "step2Title": "Select shipping method:",
+  "step2Standard": "Standard Shipping (5-7 business days) - $5.00",
+  "step2Express": "Express Shipping (2-3 business days) - $10.00",
+  "step2Back": "Back",
+  "step2Next": "Next",
+
+  "step3Title": "Payment Details",
+  "step3CardName": "Cardholder Name",
+  "step3CardNamePlaceholder": "Enter the cardholder name",
+  "step3InvalidCardName": "Cardholder name is required and must be at least 4 characters long.",
+  "step3CardNumber": "Card Number",
+  "step3CardNumberPlaceholder": "Enter the card number",
+  "step3InvalidCardNumber": "Card number is required and must be exactly 16 characters long.",
+  "step3Back": "Back",
+  "step3Next": "Next",
+
+  "step4Title": "Order Summary",
+  "step4ConfirmOrder": "Confirm Order",
+  "step4Back": "Back",
+  "step4Reset": "Return to product selection",
+
+  "checkout": {
+    "orderConfirmed": "Purchase completed",
+    "buyBtn": "Buy"
+  },
+
+  "addToCart": "Add to cart",
+  "errorOccurred": "An error occurred. Please try again later."
+}

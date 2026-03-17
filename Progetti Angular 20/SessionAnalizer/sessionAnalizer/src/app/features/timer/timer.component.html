@@ -1,0 +1,29 @@
+<div class="container">
+<div class="timer-card">
+
+  @if (focusStore.currentSession()) {
+    <h2>{{ focusStore.currentSession()!.type | uppercase }}</h2>
+    <p class="time">{{ formatTime(timeLeft()) }}</p>
+  } @else {
+    <h2>Start a session</h2>
+  }
+
+  <div class="controls">
+    @if (!isRunning()) {
+      <button (click)="startFocus()">Start Focus</button>
+      <button (click)="startBreak()">Start Break</button>
+    }@else {
+      <button (click)="pause()">Pause</button>
+    }
+    @if(!isRunning() && focusStore.currentSession()) {
+      <button (click)="resume(focusStore.currentSession()!)">Resume</button>
+    }
+    <button (click)="reset()">Reset</button>
+  </div>
+
+  <div class="progress-bar">
+    <div [ngClass]="{'progress':isRunning(),'stop-progress':!isRunning()}" [style.width.%]="progress()"></div>
+  </div>
+
+</div>
+</div>

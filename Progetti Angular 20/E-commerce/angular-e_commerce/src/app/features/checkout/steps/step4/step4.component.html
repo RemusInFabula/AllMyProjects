@@ -1,0 +1,18 @@
+<div class="border rounded-2xl p-4 flex flex-col gap-4">
+    <label class="text-lg font-semibold mb-4">{{'step4Title' | translate}}</label>
+    <app-cart [isDetail]="true"></app-cart>
+    <app-step1 [isDetail]="true"></app-step1>
+    <app-step2 [isDetail]="true"></app-step2>
+    <app-step3 [isDetail]="true"></app-step3>
+    <div class="flex gap-2" *ngIf="cart$ | async as cart">
+    @if(cart.length > 0){
+    <button class="mt-2 bg-green-600 hover:bg-green-700 text-white rounded-2xl transition-colors py-2 px-4 mt-4" [ngClass]="{'bg-gray-400 cursor-not-allowed': checkInvalid()}" [disabled]="checkInvalid()" (click)="confirmOrder()">
+        {{'checkout.buyBtn' | translate}}</button>
+    <button class="mt-auto bg-gray-600 hover:bg-gray-700 text-white rounded-2xl transition-colors py-2 px-4 mt-2" (click)="back()">
+        {{'step4Back' | translate}}</button>
+    } @else {
+        <button class="mt-2 bg-green-600 hover:bg-green-700 text-white rounded-2xl transition-colors py-2 px-4 mt-4" (click)="reset()">
+        {{'step4Reset' | translate}}</button>
+    }
+    </div>
+</div>

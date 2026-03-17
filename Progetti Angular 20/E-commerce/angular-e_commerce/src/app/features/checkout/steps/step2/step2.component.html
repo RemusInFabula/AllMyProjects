@@ -1,0 +1,18 @@
+<form [formGroup]="shippingForm" class="border rounded-2xl bg-slate-50 bg-slate-50 p-4 flex flex-col">
+      <label class="text-lg font-semibold">{{'step2Title' | translate}}</label>
+  <div class="flex gap-2 p-2">
+      <input type="radio" class="bg-slate-50 bg-slate-50" name="ship" formControlName="ship" value="standard" [checked]="shippingForm.value.ship === 'standard'" (change)="changeSelection()"/>      
+      <label>{{'step2Standard' | translate}}</label>
+    </div>
+  <div class="flex gap-2 p-2">
+      <input type="radio" class="bg-slate-50 bg-slate-50" name="ship" formControlName="ship" value="express" [checked]="shippingForm.value.ship === 'express'" (change)="changeSelection()"/>
+    <label>{{'step2Express' | translate}}</label>
+  </div>
+  @if(!isDetail){
+  <div class="flex gap-2 p-2">
+    <button class="mt-auto bg-blue-600 hover:bg-blue-700 text-white rounded-2xl transition-colors py-2 px-4"
+      (click)="back()">{{'step2Back' | translate}}</button>
+    <button class="mt-auto bg-blue-600 hover:bg-blue-700 text-white rounded-2xl transition-colors py-2 px-4" [ngClass]="{'bg-gray-400 cursor-not-allowed': shippingForm.invalid}"
+      [disabled]="shippingForm.invalid" (click)="next()">{{'step2Next' | translate}}</button>
+  </div>}
+</form>

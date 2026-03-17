@@ -1,0 +1,64 @@
+{
+  "menu": {
+    "title": "User Menu",
+    "userName": "User name :",
+    "Roles": "Roles :"
+  },
+  "productSearchPlaceholder": "Cerca prodotto...",
+  "itemQuantity": "Quantità x ",
+  "partial": "Totale Parziale: ",
+  "cartClear": "Svuota carrello",
+  "total": {
+    "value": "Totale:",
+    "shippingCost": "di cui ${{actualShippingCost}} di spedizione."
+  },
+  "goToCheckout": "Vai al checkout.",
+  "cart": {
+    "remove": "Prodotto Rimosso",
+    "add": "Prodotto aggiunto",
+    "empty": "Carrello svuotato"
+  },
+
+  "step1Title": "Dettagli Cliente",
+  "step1SubTitle": "Inserisci i tuoi dati per procedere con l'ordine.",
+  "step1Name": "Nome",
+  "step1NamePlaceholder": "Inserisci il nome",
+  "step1InvalidName": "Il nome è un campo obbligatorio e deve essere lungo almeno 3 caratteri.",
+  "step1Surname": "Cognome",
+  "step1SurnamePlaceholder": "Inserisci il cognome",
+  "step1InvalidSurname": "Il cognome è un campo obbligatorio e deve essere lungo almeno 3 caratteri.",
+  "step1Email": "Email",
+  "step1EmailPlaceholder": "Inserisci l'email",
+  "step1InvalidEmail": "L'email è un campo obbligatorio e deve avere il formato corretto.",
+  "step1Address": "Indirizzo",
+  "step1AddressPlaceholder": "Es. Viale Europa 30 00100 RM",
+  "step1InvalidAddress": "L'indirizzo è un campo obbligatorio e deve essere lungo almeno 5 caratteri.",
+  "step1Next": "Continua",
+
+  "step2Title": "Seleziona il metodo di spedizione:",
+  "step2Standard": "Spedizione Standard (5-7 giorni lavorativi) - $5.00",
+  "step2Express": "Spedizione Express (2-3 giorni lavorativi) - $10.00",
+  "step2Back": "Indietro",
+  "step2Next": "Avanti",
+
+  "step3Title": "Dettagli di pagamento",
+  "step3CardName": "Nome della carta",
+  "step3CardNamePlaceholder": "Inserisci il nome della carta",
+  "step3InvalidCardName": "Il nome della carta è un campo obbligatorio e deve essere lungo almeno 4 caratteri.",
+  "step3CardNumber": "Numero della carta",
+  "step3CardNumberPlaceholder": "Inserisci il numero della carta",
+  "step3InvalidCardNumber": "Il numero della carta è obbligatorio e deve essere lungo esattamente 16 caratteri.",
+  "step3Back": "Indietro",
+  "step3Next": "Avanti",
+
+  "step4Title": "Riepilogo Ordine",
+  "step4ConfirmOrder": "Conferma Ordine",
+  "step4Back": "Indietro",
+  "step4Reset": "Ritorna alla selezione dei prodotti",
+  "checkout": {
+    "orderConfirmed": "Acquisto effettuato",
+    "buyBtn": "Acquista"
+  },
+  "addToCart": "Aggiungi al carrello",
+  "errorOccurred": "Si è verificato un errore.Riprova più tardi."
+}

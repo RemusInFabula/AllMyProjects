@@ -1,0 +1,10 @@
+<div class="history-card">
+  <h3>History</h3>
+  <div class="session-list">
+    @for(session of focusStore.sessions(); track session.id){
+      <div class="session-card">
+        <p>{{ session.type | uppercase }} - {{ session.elapsed }}/{{ session.duration }} s</p>
+      </div>
+    }
+  </div>
+</div>

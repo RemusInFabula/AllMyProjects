@@ -1,0 +1,12 @@
+<div class="goals-card">
+  <h3>Weekly Goal</h3>
+  <p>Target: {{ weeklyGoal() | number }} s</p>
+  <div class="progress-bar">
+    <div class="progress" [style.width.%]="progress()*100"></div>
+  </div>
+
+  <div class="goal-input">
+    <input type="number" [(ngModel)]="weeklyGoalInput" placeholder="Seconds">
+    <button (click)="updateGoal()">Set Goal</button>
+  </div>
+</div>

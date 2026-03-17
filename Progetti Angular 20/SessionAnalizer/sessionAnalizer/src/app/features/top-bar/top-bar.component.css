@@ -1,0 +1,27 @@
+/* Top nav con layout flessibile */
+.topnav {
+  background-color: #00474f;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* sinistra - centro - destra */
+  padding: 10px 20px;
+}
+.topnav .left {
+  flex: 1; /* Occupa tutto lo spazio disponibile a sinistra */
+}
+
+/* Titolo */
+.topnav .title {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+.button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}

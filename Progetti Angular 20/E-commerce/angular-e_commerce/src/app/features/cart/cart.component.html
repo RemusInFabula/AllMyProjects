@@ -1,0 +1,48 @@
+<div *ngIf="cart$ | async as cart">
+  <div *ngFor="let p of cart"
+    class="cart-detail border rounded-2xl bg-slate-50 p-4 mb-2 bg-slate-50 flex justify-center items-start"
+    [ngClass]="{'gap-1':!isDetail,'gap-12':isDetail}">
+    @if(isDetail){
+    <img [src]="p.image" alt="{{ p.title }}" class="h-20 object-contain mb-4" />
+    }
+    {{ p.title }} - ${{ p.price }}
+    @if(isDetail){
+    <div class="flex items-start gap-6">{{'itemQuantity' | translate}}{{p.quantity }}</div>
+    }
+    <button class="bg-transparent-500 text-white flex item-start gap-6 rounded-2xl py-2 px-4" (click)="remove(p.id)">
+      <fa-icon style="color:#ff0000" [icon]="icons['remove']"></fa-icon>
+    </button>
+    <span class="product-counter flex item-start gap-6">{{p.quantity}}</span>
+    <button class="bg-transparent-500 text-white rounded-2xl flex item-start gap-6 py-2 px-4" (click)="add(p)">
+      <fa-icon style="color:#008000" [icon]="icons['add']"></fa-icon>
+    </button>
+    <p>{{'partial' | translate}} ${{ p.price * p.quantity }}</p>
+  </div>
+  @if(isDetail && actualShippingCost() > 0){
+  <div class="cart-total m-3">{{'total.value' | translate}} : ${{total$ | async}} <small>{{'total.shippingCost' |
+      translate:{'actualShippingCost': actualShippingCost() } }}</small></div>
+  }
+      @if(!isDetail){
+  <div class="flex justify-end m-2">
+    <div class="cart-total m-3">{{'total.value' | translate}} : ${{total$ | async}}</div>
+    <button [disabled]="cart.length === 0" [ngClass]="{'bg-red-500': cart.length > 0,
+    'bg-gray-400 cursor-not-allowed': cart.length === 0}" class="m-2 py-2 px-4 text-white rounded-2xl"
+      (click)="clear()">
+      {{'cartClear' | translate}}
+    </button>
+  </div>
+  }
+  @if(!isDetail){
+  <div class="mt-4">
+    @if(cart.length > 0){
+    <div class="flex justify-end m-2">
+      <button [disabled]="cart.length === 0" class="text-white py-2 px-4 m-2 rounded-2xl" [ngClass]="{'bg-green-500': cart.length > 0,
+    'bg-gray-400 cursor-not-allowed': cart.length === 0}">
+        <a [routerLink]="'checkout'">
+          {{'goToCheckout' | translate}}</a>
+      </button>
+    </div>
+    }
+  </div>
+  }
+</div>

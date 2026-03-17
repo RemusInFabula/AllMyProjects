@@ -1,0 +1,55 @@
+/* Top nav con layout flessibile */
+.topnav {
+  background-color: #002f9d;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* sinistra - centro - destra */
+  padding: 10px 20px;
+}
+
+/* Titolo */
+.topnav .title {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Contenitore dei link */
+.topnav .center a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Hover */
+.topnav .center a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active */
+.topnav .center a.active {
+  background-color: rgb(55, 87, 162);
+  color: white;
+}
+
+/* Icona login a destra */
+.topnav .login-icon .shopping-icon{
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.topnav .login-icon:hover .shopping-icon:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 6px;
+}
+.custom-icon-color {
+  color: #adb4ff;       /* Colore dell’icona */
+}

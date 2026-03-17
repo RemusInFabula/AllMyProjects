@@ -1,0 +1,15 @@
+<div *ngIf="user$ as user" class="cart-box-container fade" [ngClass]="showMenu ? 'show' : ''">
+    <div class="triangle-up">
+        <div class="cart-box text-black">
+            <h1 class="m-2 text-black text-2xl">{{'menu.title' | translate}}</h1>
+            <p class="m-2">{{'menu.userName' | translate}} <small>{{user?.['email']}}</small></p>
+            <p class="m-2">{{'menu.Roles' | translate}}</p>
+            @for(elem of user?.resource_access?.['account']?.['roles'];track elem){
+            <small class="flex ml-2 mr-2">{{elem}}</small>}
+            <div class="flex justify-end">
+                <button class="m-2 bg-red-500 text-white px-2 rounded-2xl" (click)="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+
+</div>

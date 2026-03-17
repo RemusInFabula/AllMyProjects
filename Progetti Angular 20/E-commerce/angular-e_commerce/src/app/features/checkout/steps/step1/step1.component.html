@@ -1,0 +1,30 @@
+<div class="grid grid-cols-1 gap-6">
+<form class="border rounded-2xl bg-slate-50 p-4 flex flex-col bg-slate-50" [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+    <label class="text-lg font-semibold">{{'step1Title' | translate}}</label>
+    <label class="text-sm text-gray-600 mb-4">{{'step1SubTitle' | translate}}</label>
+
+    <div class="grid grid-cols-3 gap 4">
+        
+    </div>
+    <label class="text-sm font-medium mt-2" for="nome">{{'step1Name' | translate}}</label>
+    <input type="text" class="bg-slate-50 bg-slate-50" formControlName="nome" placeholder="{{'step1NamePlaceholder' | translate}}" id="nome" (change)="setValidity()"/>
+    <small class="text-red-600" *ngIf="customerForm.get('nome')?.touched && customerForm.get('nome')?.invalid">{{'step1InvalidName' | translate}}</small>
+
+    <label class="text-sm font-medium mt-2" for="cognome">{{'step1Surname' | translate}}</label>
+    <input type="text" class="bg-slate-50 bg-slate-50" formControlName="cognome" placeholder="{{'step1SurnamePlaceholder' | translate}}" id="cognome" (change)="setValidity()"/>
+    <small class="text-red-600" *ngIf="customerForm.get('cognome')?.touched && customerForm.get('cognome')?.invalid">{{'step1InvalidSurname' | translate}}</small>
+
+    <label class="text-sm font-medium mt-2" for="email">{{'step1Email' | translate}}</label>
+    <input type="email" class="bg-slate-50 bg-slate-50" formControlName="email" placeholder="{{'step1EmailPlaceholder' | translate}}" id="email" (change)="setValidity()"/>
+    <small class="text-red-600" *ngIf="customerForm.get('email')?.touched && customerForm.get('email')?.invalid">{{'step1InvalidEmail' | translate}}</small>
+
+    <label class="text-sm font-medium mt-2" for="indirizzo">{{'step1Address' | translate}}</label>
+    <input type="text" class="bg-slate-50 bg-slate-50" formControlName="indirizzo" placeholder="{{'step1AddressPlaceholder' | translate}}" id="indirizzo" (change)="setValidity()"/>
+    <small class="text-red-600" *ngIf="customerForm.get('indirizzo')?.touched && customerForm.get('indirizzo')?.invalid">{{'step1InvalidAddress' | translate}}</small>
+    <div class="flex gap-2">
+    @if(!isDetail){<button class="mt-2 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl transition-colors py-2 px-4" type="submit" [ngClass]="{'bg-gray-400 cursor-not-allowed':customerForm.invalid}" [disabled]="customerForm.invalid">
+        {{'step1Next' | translate}}
+        </button>}
+    </div>
+</form>
+</div>

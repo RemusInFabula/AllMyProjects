@@ -1,0 +1,3 @@
+<div class="toast-box fade" [ngClass]="{'show':toastObj.visible,'success-border':toastObj.status === 'S','error-border':toastObj.status === 'E'}">
+    <h1 [ngClass]="{'text-color-green-500':toastObj.status === 'S'}">{{toastObj.message | translate}}</h1>
+</div>

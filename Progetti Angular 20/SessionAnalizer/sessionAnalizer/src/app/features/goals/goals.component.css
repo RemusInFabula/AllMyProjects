@@ -1,0 +1,27 @@
+.goals-card {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fff3e0;
+  border-radius: 8px;
+}
+.progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.progress {
+  height: 100%;
+  background-color: #ff9800;
+  border-radius: 5px;
+  width: 0%;
+  transition: width 0.2s;
+}
+.goal-input input {
+  padding: 5px;
+  width: 80px;
+}
+.goal-input button {
+  margin-left: 5px;
+  padding: 5px 10px;
+}

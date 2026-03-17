@@ -1,0 +1,66 @@
+{
+  "menu": {
+    "title": "Benutzermenü",
+    "userName": "Benutzername:",
+    "Roles": "Rollen:"
+  },
+  "productSearchPlaceholder": "Produkt suchen...",
+  "itemQuantity": "Menge x ",
+  "partial": "Zwischensumme: ",
+  "cartClear": "Warenkorb leeren",
+  "total": {
+    "value": "Gesamt:",
+    "shippingCost": "davon ${{actualShippingCost}} Versandkosten."
+  },
+  "goToCheckout": "Zur Kasse gehen.",
+  "cart": {
+    "remove": "Produkt entfernt",
+    "add": "Produkt hinzugefügt",
+    "empty": "Warenkorb geleert"
+  },
+
+  "step1Title": "Kundendaten",
+  "step1SubTitle": "Geben Sie Ihre Daten ein, um mit der Bestellung fortzufahren.",
+  "step1Name": "Vorname",
+  "step1NamePlaceholder": "Vornamen eingeben",
+  "step1InvalidName": "Der Vorname ist erforderlich und muss mindestens 3 Zeichen lang sein.",
+  "step1Surname": "Nachname",
+  "step1SurnamePlaceholder": "Nachnamen eingeben",
+  "step1InvalidSurname": "Der Nachname ist erforderlich und muss mindestens 3 Zeichen lang sein.",
+  "step1Email": "E-Mail",
+  "step1EmailPlaceholder": "E-Mail eingeben",
+  "step1InvalidEmail": "Die E-Mail-Adresse ist erforderlich und muss gültig sein.",
+  "step1Address": "Adresse",
+  "step1AddressPlaceholder": "Z. B. Viale Europa 30 00100 RM",
+  "step1InvalidAddress": "Die Adresse ist erforderlich und muss mindestens 5 Zeichen lang sein.",
+  "step1Next": "Weiter",
+
+  "step2Title": "Versandart auswählen:",
+  "step2Standard": "Standardversand (5–7 Werktage) – $5.00",
+  "step2Express": "Expressversand (2–3 Werktage) – $10.00",
+  "step2Back": "Zurück",
+  "step2Next": "Weiter",
+
+  "step3Title": "Zahlungsdetails",
+  "step3CardName": "Name auf der Karte",
+  "step3CardNamePlaceholder": "Namen auf der Karte eingeben",
+  "step3InvalidCardName": "Der Kartenname ist erforderlich und muss mindestens 4 Zeichen lang sein.",
+  "step3CardNumber": "Kartennummer",
+  "step3CardNumberPlaceholder": "Kartennummer eingeben",
+  "step3InvalidCardNumber": "Die Kartennummer ist erforderlich und muss genau 16 Zeichen lang sein.",
+  "step3Back": "Zurück",
+  "step3Next": "Weiter",
+
+  "step4Title": "Bestellübersicht",
+  "step4ConfirmOrder": "Bestellung bestätigen",
+  "step4Back": "Zurück",
+  "step4Reset": "Zur Produktauswahl zurückkehren",
+
+  "checkout": {
+    "orderConfirmed": "Kauf abgeschlossen",
+    "buyBtn": "Kaufen"
+  },
+
+  "addToCart": "In den Warenkorb",
+  "errorOccurred": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut."
+}

@@ -1,0 +1,55 @@
+<div class="container">
+
+    <h1>Settings</h1>
+
+    <section>
+
+        <h2>Theme</h2>
+
+        <button (click)="settings.theme.set('light')">
+            Light
+        </button>
+
+        <button (click)="settings.theme.set('dark')">
+            Dark
+        </button>
+
+    </section>
+
+
+    <section>
+
+        <h2>Focus Duration</h2>
+
+        <input type="number" [min]="1" [max]="60" [value]="settings.focusDuration()"
+            (input)="settings.focusDuration.set($any($event.target).valueAsNumber)">
+
+    </section>
+
+
+    <section>
+
+        <h2>Break Duration</h2>
+
+        <input type="number" [min]="1" [max]="30" [value]="settings.breakDuration()"
+            (input)="settings.breakDuration.set($any($event.target).valueAsNumber)">
+
+    </section>
+
+
+    <section>
+
+        <h2>Notifications</h2>
+
+        <label>
+
+            <input type="checkbox" [checked]="settings.notificationsEnabled()"
+                (change)="settings.notificationsEnabled.set($any($event.target).checked)">
+
+            Enable notifications
+
+        </label>
+
+    </section>
+
+</div>

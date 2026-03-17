@@ -1,0 +1,11 @@
+<div class="shopping-box-container fade" [ngClass]="isOpen ? 'show' : ''">
+    <div class="triangle-up">
+            <div class="shopping-box">
+        <div class="close-viewer-btn">
+            <button (click)="closeViewer()">❌</button>
+        </div>
+        <app-cart></app-cart>
+    </div>
+    </div>
+
+</div>
