@@ -1,9 +1,0 @@
-<div>
-    <h1>Goals</h1>
-    <app-add-goal />
-    <div class="goal-container">
-        @for (goal of store.goals(); track goal.id) {
-        <app-goal-card [goal]="goal" />
-        }
-    </div>
-</div>
